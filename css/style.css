@@ -1,0 +1,224 @@
+/* ===================================
+Q1
+=================================== */
+
+.q1 {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  background-color: #ff0000;
+}
+
+@media screen and (max-width:959px) {
+  .q1 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ===================================
+Q2
+=================================== */
+
+.q2 {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+}
+
+@media screen and (max-width:959px) {
+  .q2 {
+    background-color: #007bff;
+  }
+}
+
+/* ===================================
+Q3
+=================================== */
+
+.q3 {
+  display: flex;
+  justify-content: center;
+}
+
+.q3 .q3_blue {
+  width: 200px;
+  height: 200px;
+  background-color: #0008ff;
+}
+
+.q3 .q3_green {
+  width: 200px;
+  height: 200px;
+  background-color: #22ff00;
+  margin-left: 150px;
+}
+
+@media screen and (max-width:959px) {
+  .q3 .q3_green {
+    margin-left: 50px;
+  }
+}
+
+/* ===================================
+Q4
+=================================== */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix{
+  width: 400px;
+  margin: 0 auto;
+}
+
+.q4_red {
+  width: 200px;
+  height: 200px;
+  background-color: #ff0000;
+  float: left;
+}
+
+.q4_blue {
+  width: 200px;
+  height: 200px;
+  background-color: #0008ff;
+  float: left;
+}
+
+@media screen and (max-width:959px){
+  .q4_red {
+    float: none;
+  }
+  
+  .q4_blue {
+    float: none;
+  }
+}
+
+/* ===================================
+Q5
+=================================== */
+.q5_box{
+  display: flex;
+  justify-content: center;
+}
+
+.q5_red{
+  width: 200px;
+  height: 200px;
+  background-color: #ff0000;
+}
+
+.q5_blue{
+  width: 200px;
+  height: 200px;
+  background-color: #0008ff;
+}
+
+.q5_orange{
+  width: 200px;
+  height: 200px;
+  background-color: #ff8400;
+}
+
+.q5_box p{
+  text-align: center;
+  line-height: 200px;
+}
+
+@media screen and (max-width:959px){
+  .q5_box{
+    flex-direction: row-reverse;
+  }
+}
+
+/* ===================================
+Q6
+=================================== */
+.q6_box{
+  display: flex;
+  justify-content: center;
+}
+
+.q6_green{
+  width: 200px;
+  height: 200px;
+  background-color: #00ff51;
+}
+
+.q6_yellow{
+  width: 200px;
+  height: 200px;
+  background-color: #d4ff00;
+}
+
+.q6_pink{
+  width: 200px;
+  height: 200px;
+  background-color: #ff00e1;
+}
+
+.q6_box p{
+  text-align: center;
+  line-height: 200px;
+}
+
+@media screen and (max-width:959px){
+  .q6_green{
+    order: 2;
+  }
+  
+  .q6_yellow{
+    order: 3;
+  }
+  
+  .q6_pink{
+    order: 1;
+  }
+}
+
+/* ===================================
+Q7
+=================================== */
+.q7_box{
+  display: flex;
+  justify-content: center;
+}
+
+.q7_blue{
+  width: 250px;
+  height: 250px;
+  background-color: #0008ff;
+  display: none;
+}
+
+.q7_red{
+  width: 200px;
+  height: 200px;
+  background-color: #ff0000;
+}
+
+.q7_green{
+  width: 200px;
+  height: 200px;
+  background-color: #00ff51;
+}
+
+@media screen and (max-width:959px){
+  .q7_blue{
+    display: block;
+  }
+  
+  .q7_red{
+    display: none;
+}
+
+.q7_green{
+  width: 250px;
+  height: 250px;
+}
