@@ -71,7 +71,7 @@ Q4
   clear: both;
 }
 
-.clearfix{
+.clearfix {
   width: 400px;
   margin: 0 auto;
 }
@@ -90,11 +90,11 @@ Q4
   float: left;
 }
 
-@media screen and (max-width:959px){
+@media screen and (max-width:959px) {
   .q4_red {
     float: none;
   }
-  
+
   .q4_blue {
     float: none;
   }
@@ -103,36 +103,37 @@ Q4
 /* ===================================
 Q5
 =================================== */
-.q5_box{
+.q5_box {
   display: flex;
   justify-content: center;
+  flex-direction: row;
 }
 
-.q5_red{
+.q5_red {
   width: 200px;
   height: 200px;
   background-color: #ff0000;
 }
 
-.q5_blue{
+.q5_blue {
   width: 200px;
   height: 200px;
   background-color: #0008ff;
 }
 
-.q5_orange{
+.q5_orange {
   width: 200px;
   height: 200px;
   background-color: #ff8400;
 }
 
-.q5_box p{
+.q5_box p {
   text-align: center;
   line-height: 200px;
 }
 
-@media screen and (max-width:959px){
-  .q5_box{
+@media screen and (max-width:959px) {
+  .q5_box {
     flex-direction: row-reverse;
   }
 }
@@ -140,44 +141,47 @@ Q5
 /* ===================================
 Q6
 =================================== */
-.q6_box{
+.q6_box {
   display: flex;
   justify-content: center;
 }
 
-.q6_green{
+.q6_green {
   width: 200px;
   height: 200px;
   background-color: #00ff51;
+  order: 1;
 }
 
-.q6_yellow{
+.q6_yellow {
   width: 200px;
   height: 200px;
   background-color: #d4ff00;
+  order: 2;
 }
 
-.q6_pink{
+.q6_pink {
   width: 200px;
   height: 200px;
   background-color: #ff00e1;
+  order: 3;
 }
 
-.q6_box p{
+.q6_box p {
   text-align: center;
   line-height: 200px;
 }
 
-@media screen and (max-width:959px){
-  .q6_green{
+@media screen and (max-width:959px) {
+  .q6_green {
     order: 2;
   }
-  
-  .q6_yellow{
+
+  .q6_yellow {
     order: 3;
   }
-  
-  .q6_pink{
+
+  .q6_pink {
     order: 1;
   }
 }
@@ -185,40 +189,43 @@ Q6
 /* ===================================
 Q7
 =================================== */
-.q7_box{
+.q7_box {
   display: flex;
   justify-content: center;
 }
 
-.q7_blue{
+.q7_blue {
   width: 250px;
   height: 250px;
   background-color: #0008ff;
   display: none;
 }
 
-.q7_red{
+.q7_red {
   width: 200px;
   height: 200px;
   background-color: #ff0000;
+  display: block;
 }
 
-.q7_green{
+.q7_green {
   width: 200px;
   height: 200px;
   background-color: #00ff51;
 }
 
-@media screen and (max-width:959px){
-  .q7_blue{
+@media screen and (max-width:959px) {
+  .q7_blue {
     display: block;
   }
-  
-  .q7_red{
-    display: none;
-}
 
-.q7_green{
-  width: 250px;
-  height: 250px;
+  .q7_red {
+    display: none;
+  }
+
+  .q7_green {
+    width: 250px;
+    height: 250px;
+  }
+
 }
